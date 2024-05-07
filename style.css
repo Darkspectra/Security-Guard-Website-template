@@ -1,0 +1,185 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* =========Navbar style========== */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    width: 80px;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+}
+
+li:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.menu-container{
+    display: flex;
+    gap: 20px
+}
+
+
+
+
+/* ==============Banner Style=========== */
+
+.banner-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.banner-text{
+    width: 400px;
+}
+
+.title{
+    font-size: 45px;
+}
+
+.description{
+    color: chocolate;
+}
+
+.btn{
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.react-btn{
+    background-color: chocolate;
+}
+
+
+/* ================image container============= */
+
+.image-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px;
+}
+
+.image{
+    width: 100px;
+}
+
+/* ===============Services=========== */
+
+.service-title{
+    text-align: center;
+    font-size: 40px;
+}
+
+.service-description{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.line{
+    width: 5%;
+}
+
+.line-container{
+    text-align: center;
+}
+
+
+/* ==============card=========== */
+
+.card{
+    border: 2px gray solid;
+    width: 500px;
+    padding: 20px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+
+/* Media query for tablets */
+@media screen and (max-width: 1024px) {
+    .banner-text {
+        width: 70%;
+    }
+
+    .image-container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .banner-text {
+        width: 90%;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .image-container {
+        flex-direction: column;
+    }
+
+    .image {
+        width: 80px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .service-title {
+        font-size: 30px;
+    }
+
+    .service-description {
+        font-size: 14px;
+    }
+
+    .line {
+        width: 10%;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
